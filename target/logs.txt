@@ -1,4 +1,0 @@
-id: 1, msd: Hello!Some event for 2, date: 15:59:32
-id: 2, msd: Hello!Some event for 3, date: 15:59:32
-id: 1, msd: Hello!Some event for 2, date: 16:01:41
-id: 2, msd: Hello!Some event for 3, date: 16:01:41
