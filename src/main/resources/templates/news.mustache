@@ -1,0 +1,60 @@
+<html>
+<head>
+    <title>Новости</title>
+    <style>
+        table, th, td {
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+
+Фильтр:
+<div>
+    <form method="post" action="/news/categoriesFilter">
+        <input name="categories" type="text">
+        <button type="submit">Фильтровать</button>
+    </form>
+</div>
+<div>
+    {{#news}}
+    <table width="500">
+        <tr>
+            <th>{{title}}</th>
+        </tr>
+        <tr>
+            <th>
+                {{categories}}
+            </th>
+        </tr>
+        <tr>
+            <th>{{text}}</th>
+        </tr>
+        <tr>
+            <th>
+                <form name="edit" action="/news/edit" method="get">
+                    <button type="submit" name="id" value={{id}}>Редактировать</button>
+                </form>
+                <form name="delete" action="/news/delete" method="post">
+                    <button type="submit" name="id" value={{id}}>Удалить</button>
+                </form>
+            </th>
+        </tr>
+    </table>
+
+    <!--<div>-->
+    <!--<b>title: {{title}}</b>-->
+    <!--<b>text: {{text}}</b>-->
+    <!--<b>categories: {{categories}}</b>-->
+    <!--</div>-->
+    {{/news}}
+</div>
+
+<p>
+    <a href="/news/add">
+        Добавить новость
+    </a>
+</p>
+
+</body>
+</html>

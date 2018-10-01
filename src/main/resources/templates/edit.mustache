@@ -1,0 +1,21 @@
+<html>
+<head>
+    <title>Добавить новость</title>
+</head>
+<body>
+<form action="/news/edit" method="post">
+    <input name="title" value={{news.title}}>
+    <input name="categories" value={{news.categories}}>
+    <br>
+    <input name="text" value={{news.text}}>
+    <br>
+    <button type="submit" name="id" value={{news.id}}>Редактировать</button>
+</form>
+<p>
+    <a href="/news">
+        На главную
+    </a>
+</p>
+
+</body>
+</html>
