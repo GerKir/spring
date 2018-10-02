@@ -12,7 +12,7 @@
     <input type="text" name="text" placeholder="Новость:">
     <br>
     {{#categories}}
-        <input type="radio" name="category" value={{name}} checked>{{name}}
+        <input type="checkbox" name="categories" value={{name}}>{{name}}
     {{/categories}}
     <br>
     <button type="submit">Добавить</button>

@@ -14,6 +14,8 @@ public interface NewsRepo extends CrudRepository<News, Long>, JpaSpecificationEx
 
     Iterable<News> findByTitleIgnoreCaseContainingOrTextIgnoreCaseContaining(String text1, String text2);
 
+    Iterable<News> findByTitleIgnoreCaseContainingOrTextIgnoreCaseContainingAndCategoriesContaining(String text1, String text2, Set<Categories> categories);
+
     News findById(long id);
 
     void deleteById(long id);

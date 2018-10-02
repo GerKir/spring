@@ -3,12 +3,30 @@
     <title>Добавить новость</title>
 </head>
 <body>
+{{#message}}
+<p>{{message}}</p>
+{{/message}}
 <form action="/news/edit" method="post">
-    <input name="title" value={{news.title}}>
-    <input name="categories" value={{news.categories}}>
+    <p>
+        Заголовок новости
+        <br>
+        <input name="title" type="text" value="{{news.title}}">
+    </p>
+    Теукщие категории:
     <br>
-    <input name="text" value={{news.text}}>
-    <br>
+    {{news.categories}}
+    <p>
+        Выбрать новые категории:
+        <br>
+        {{#categories}}
+        <input type="checkbox" name="categories" value={{name}}> {{name}}
+        {{/categories}}
+    </p>
+    <p>
+        Текст новости
+        <br>
+        <input name="text" type="text" value="{{news.text}}">
+    </p>
     <button type="submit" name="id" value={{news.id}}>Редактировать</button>
 </form>
 <p>

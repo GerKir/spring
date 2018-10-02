@@ -3,60 +3,59 @@
     <title>Новости</title>
     <style>
         table, th, td {
-            border: 1px solid black;
+            border: 1px solid;
         }
     </style>
 </head>
 <body>
-
-Фильтр:
-<form method="post" action="/news">
-    {{#categories}}
-    <input type="radio" name="category" value={{name}}>{{name}}
-    {{/categories}}
-    <input type="radio" name="category" value="">Сбросить
-    <button type="submit">Фильтровать</button>
-</form>
-
-Поиск:
-<form method="get" action="/news/find">
-    <input type="text" name="text" placeholder="Введите текст">
-    <button type="submit">Искать</button>
-</form>
-
-<div>
-    {{#news}}
-    <table width="300">
-        <tr>
-            <th>{{title}}</th>
-        </tr>
-        <tr>
-            <th>
-                {{categories}}
-            </th>
-        </tr>
-        <tr>
-            <th>{{text}}</th>
-        </tr>
-        <tr>
-            <th>
-                <form name="edit" action="/news/edit" method="get">
-                    <button type="submit" name="id" value={{id}}>Редактировать</button>
-                </form>
-                <form name="delete" action="/news/delete" method="post">
-                    <button type="submit" name="id" value={{id}}>Удалить</button>
-                </form>
-            </th>
-        </tr>
-    </table>
-    {{/news}}
-</div>
-
-<p>
-    <a href="/news/add">
-        Добавить новость
-    </a>
-</p>
-
+<a href="/news/add">
+    Добавить новость
+</a>
+<table>
+    <tr>
+        <form method="post" action="/news">
+            <td>
+                Фильтр:
+                <br>
+                {{#categories}}
+                <input type="checkbox" name="categories" value={{name}}>{{name}}
+                {{/categories}}
+            </td>
+    <tr>
+        <td>
+            Поиск:
+            <input type="text" name="text" placeholder="Введите текст">
+            <button type="submit">Искать</button>
+        </td>
+        </form>
+    </tr>
+</table>
+<br>
+{{#news}}
+<table width="300">
+    <tr>
+        <th>{{title}}</th>
+    </tr>
+    <tr>
+        <td>
+            {{categories}}
+        </td>
+    </tr>
+    <tr>
+        <td>{{text}}</td>
+    </tr>
+    <tr>
+        <td>
+            <form name="edit" action="/news/edit" method="get">
+                <button type="submit" name="id" value={{id}}>Редактировать</button>
+            </form>
+            <form name="delete" action="/news/delete" method="post">
+                <button type="submit" name="id" value={{id}}>Удалить</button>
+            </form>
+        </td>
+    </tr>
+</table>
+<br>
+{{/news}}
 </body>
 </html>
