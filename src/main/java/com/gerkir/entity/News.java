@@ -1,6 +1,7 @@
 package com.gerkir.entity;
 
 import javax.persistence.*;
+import java.util.Set;
 
 @Entity
 public class News {
@@ -12,22 +13,25 @@ public class News {
     private String title;
     private String text;
 
-    private String categories;
+    @ElementCollection(targetClass = Categories.class, fetch = FetchType.EAGER)
+    @CollectionTable(name = "news_categories", joinColumns = @JoinColumn(name = "news_id"))
+    @Enumerated(EnumType.STRING)
+    private Set<Categories> categories;
 
     public News() {
     }
 
-    public News(String title, String text, String categories) {
+    public News(String title, String text, Set<Categories> categories) {
         this.title = title;
         this.text = text;
         this.categories = categories;
     }
 
-    public String getCategories() {
+    public Set<Categories> getCategories() {
         return categories;
     }
 
-    public void setCategories(String categories) {
+    public void setCategories(Set<Categories> categories) {
         this.categories = categories;
     }
 

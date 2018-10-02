@@ -3,13 +3,17 @@
     <title>Добавить новость</title>
 </head>
 <body>
+{{#message}}
 {{message}}
+{{/message}}
 <form method="post">
     <input type="text" name="title" placeholder="Заголовок новости:">
     <br>
     <input type="text" name="text" placeholder="Новость:">
     <br>
-    <input type="text" name="categories" placeholder="Категория(необязательно)">
+    {{#categories}}
+        <input type="radio" name="category" value={{name}} checked>{{name}}
+    {{/categories}}
     <br>
     <button type="submit">Добавить</button>
 </form>

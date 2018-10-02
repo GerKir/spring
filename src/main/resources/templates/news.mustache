@@ -10,15 +10,23 @@
 <body>
 
 Фильтр:
-<div>
-    <form method="post" action="/news/categoriesFilter">
-        <input name="categories" type="text">
-        <button type="submit">Фильтровать</button>
-    </form>
-</div>
+<form method="post" action="/news">
+    {{#categories}}
+    <input type="radio" name="category" value={{name}}>{{name}}
+    {{/categories}}
+    <input type="radio" name="category" value="">Сбросить
+    <button type="submit">Фильтровать</button>
+</form>
+
+Поиск:
+<form method="get" action="/news/find">
+    <input type="text" name="text" placeholder="Введите текст">
+    <button type="submit">Искать</button>
+</form>
+
 <div>
     {{#news}}
-    <table width="500">
+    <table width="300">
         <tr>
             <th>{{title}}</th>
         </tr>
@@ -41,12 +49,6 @@
             </th>
         </tr>
     </table>
-
-    <!--<div>-->
-    <!--<b>title: {{title}}</b>-->
-    <!--<b>text: {{text}}</b>-->
-    <!--<b>categories: {{categories}}</b>-->
-    <!--</div>-->
     {{/news}}
 </div>
 
