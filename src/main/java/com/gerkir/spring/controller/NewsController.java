@@ -1,8 +1,8 @@
 package com.gerkir.spring.controller;
 
-import com.gerkir.entity.Categories;
-import com.gerkir.entity.News;
-import com.gerkir.repos.NewsRepo;
+import com.gerkir.spring.entity.Categories;
+import com.gerkir.spring.entity.News;
+import com.gerkir.spring.repos.NewsRepo;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;

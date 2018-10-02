@@ -8,14 +8,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="835b3a74-69e3-4ebe-b30f-289f3e47fa2f" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/eb2ac61d-5ae1-4d64-a218-1b65d1179364.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/eb2ac61d-5ae1-4d64-a218-1b65d1179364.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/eb2ac61d-5ae1-4d64-a218-1b65d1179364/storage_v2/_src_/database/springmvc.rU4zVQ/schema/public.abK9xQ.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/eb2ac61d-5ae1-4d64-a218-1b65d1179364/storage_v2/_src_/database/springmvc.rU4zVQ/schema/public.abK9xQ.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/gerkir/entity/News.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/gerkir/entity/News.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/gerkir/repos/NewsRepo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/gerkir/repos/NewsRepo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/gerkir/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/gerkir/spring/Application.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/gerkir/entity/Categories.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/gerkir/spring/entity/Categories.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/gerkir/entity/News.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/gerkir/spring/entity/News.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/gerkir/repos/NewsRepo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/gerkir/spring/repos/NewsRepo.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/gerkir/spring/controller/NewsController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/gerkir/spring/controller/NewsController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/add.mustache" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/add.mustache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/news.mustache" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/news.mustache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/gerkir/spring/controller/NewsController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/gerkir/spring/controller/NewsController.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -126,21 +124,21 @@
           <entry key="cell" value="26" />
           <entry key="dummy" value="7" />
           <entry key="html" value="23" />
-          <entry key="java" value="8803" />
+          <entry key="java" value="10296" />
           <entry key="jsp" value="85" />
-          <entry key="mustache" value="1747" />
+          <entry key="mustache" value="2503" />
           <entry key="properties" value="103" />
           <entry key="sql" value="157" />
-          <entry key="txt" value="200" />
+          <entry key="txt" value="359" />
           <entry key="xml" value="1671" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="HTML" value="1770" />
-          <entry key="JAVA" value="8803" />
+          <entry key="HTML" value="2526" />
+          <entry key="JAVA" value="10296" />
           <entry key="JSP" value="85" />
-          <entry key="PLAIN_TEXT" value="207" />
+          <entry key="PLAIN_TEXT" value="366" />
           <entry key="Properties" value="103" />
           <entry key="Scratch" value="183" />
           <entry key="XML" value="1671" />
@@ -153,9 +151,9 @@
           <entry key="class" value="14" />
           <entry key="html" value="2" />
           <entry key="iml" value="1" />
-          <entry key="java" value="120" />
+          <entry key="java" value="122" />
           <entry key="jsp" value="4" />
-          <entry key="mustache" value="22" />
+          <entry key="mustache" value="28" />
           <entry key="news" value="16" />
           <entry key="news_categories" value="3" />
           <entry key="news_id_seq" value="1" />
@@ -171,9 +169,9 @@
         <counts>
           <entry key="CLASS" value="14" />
           <entry key="Database Element" value="20" />
-          <entry key="HTML" value="23" />
+          <entry key="HTML" value="29" />
           <entry key="IDEA_MODULE" value="1" />
-          <entry key="JAVA" value="120" />
+          <entry key="JAVA" value="122" />
           <entry key="JSP" value="4" />
           <entry key="Manifest" value="1" />
           <entry key="PLAIN_TEXT" value="12" />
@@ -190,11 +188,20 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/gerkir/spring/controller/NewsController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="506">
-              <caret line="69" column="42" selection-start-line="69" selection-start-column="42" selection-end-line="69" selection-end-column="42" />
+            <state relative-caret-position="204">
+              <caret line="18" column="57" lean-forward="true" selection-start-line="18" selection-start-column="57" selection-end-line="18" selection-end-column="57" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/templates/add.mustache">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="238">
+              <caret line="14" column="9" selection-start-line="14" selection-start-column="9" selection-end-line="14" selection-end-column="9" />
             </state>
           </provider>
         </entry>
@@ -202,8 +209,11 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/resources/templates/news.mustache">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="10" selection-start-line="10" selection-end-line="10" />
+            <state relative-caret-position="136">
+              <caret line="22" column="14" selection-start-line="22" selection-start-column="14" selection-end-line="22" selection-end-column="14" />
+              <folding>
+                <marker date="1538488232219" expanded="true" signature="695:696" ph="..." />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -211,36 +221,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/resources/templates/edit.mustache">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="9" column="43" lean-forward="true" selection-start-line="9" selection-start-column="43" selection-end-line="9" selection-end-column="43" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/gerkir/entity/News.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="442">
-              <caret line="26" column="37" selection-start-line="26" selection-start-column="37" selection-end-line="26" selection-end-column="37" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#759#760#0" expanded="true" />
-                <element signature="e#792#793#0" expanded="true" />
-                <element signature="e#853#854#0" expanded="true" />
-                <element signature="e#897#898#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/gerkir/repos/NewsRepo.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="14" column="36" selection-start-line="14" selection-start-column="36" selection-end-line="14" selection-end-column="36" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="143">
+              <caret line="27" column="9" selection-start-line="27" selection-start-column="9" selection-end-line="27" selection-end-column="9" />
             </state>
           </provider>
         </entry>
@@ -273,7 +255,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/com/gerkir/spring/loggers/CombinedEventLogger.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/gerkir/spring/loggers/FileEventLogger.java" />
         <option value="$PROJECT_DIR$/target/logs.txt" />
         <option value="$PROJECT_DIR$/src/main/resources/spring.xml" />
@@ -315,15 +296,16 @@
         <option value="$PROJECT_DIR$/src/main/resources/templates/delete.mustache" />
         <option value="$PROJECT_DIR$/src/main/java/com/gerkir/entity/Categoryes.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/gerkir/entity/Category.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/templates/edit.mustache" />
         <option value="$PROJECT_DIR$/src/main/java/com/gerkir/entity/Categories.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/gerkir/entity/News.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/gerkir/test.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/gerkir/entity/News.java" />
         <option value="$PROJECT_DIR$/src/main/resources/templates/add.mustache" />
         <option value="$PROJECT_DIR$/src/main/java/com/gerkir/repos/NewsRepo.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/templates/edit.mustache" />
         <option value="$PROJECT_DIR$/src/main/resources/templates/news.mustache" />
+        <option value="$PROJECT_DIR$/src/main/java/com/gerkir/NewsController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/gerkir/spring/controller/NewsController.java" />
-        <option value="$PROJECT_DIR$/pom.xml" />
       </list>
     </option>
   </component>
@@ -422,34 +404,7 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="gerkir" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="spring_test" type="b2602c69:ProjectViewProjectNode" />
-              <item name="spring_test" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="gerkir" type="462c0819:PsiDirectoryNode" />
-              <item name="entity" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="spring_test" type="b2602c69:ProjectViewProjectNode" />
-              <item name="spring_test" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="gerkir" type="462c0819:PsiDirectoryNode" />
-              <item name="repos" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="spring_test" type="b2602c69:ProjectViewProjectNode" />
-              <item name="spring_test" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="gerkir" type="462c0819:PsiDirectoryNode" />
-              <item name="controller" type="462c0819:PsiDirectoryNode" />
+              <item name="spring" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="spring_test" type="b2602c69:ProjectViewProjectNode" />
@@ -480,7 +435,7 @@
     <property name="RequestMappingsPanelWidth1" value="75" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1538424808139" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1538488691470" />
     <property name="database.console.LAST_STATE" value="false" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/src/main/java" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/target/SpringMVCHelloWorldExample.war" />
@@ -527,7 +482,7 @@
       <module name="spring_test" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.gerkir.*" />
+          <option name="PATTERN" value="com.gerkir.spring.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -539,11 +494,11 @@
       <module name="spring_test" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.gerkir.entity.*" />
+          <option name="PATTERN" value="com.gerkir.spring.entity.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.gerkir.Application" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.gerkir.spring.Application" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -714,7 +669,7 @@
       <workItem from="1538124615265" duration="13887000" />
       <workItem from="1538140436937" duration="9911000" />
       <workItem from="1538376649226" duration="13470000" />
-      <workItem from="1538463513101" duration="3593000" />
+      <workItem from="1538463513101" duration="14097000" />
     </task>
     <task id="LOCAL-00001" summary="HelloWorld Spring MVC project">
       <created>1538043331759</created>
@@ -730,11 +685,25 @@
       <option name="project" value="LOCAL" />
       <updated>1538381962787</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="added find news by text&#10;todo: fix categories and edit news">
+      <created>1538468636892</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1538468636892</updated>
+    </task>
+    <task id="LOCAL-00004" summary="added filter and edit news functions">
+      <created>1538488423238</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1538488423238</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="82548000" />
+    <option name="totallyTimeSpent" value="93052000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
@@ -750,7 +719,7 @@
       <window_info id="Web" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32991204" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49932885" visible="true" weight="0.31231672" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49932885" weight="0.6686217" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.398827" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -822,7 +791,9 @@
     <MESSAGE value="Init test spring project with xml-config" />
     <MESSAGE value="HelloWorld Spring MVC project" />
     <MESSAGE value="News VMC project&#10;TODO: add enum/table categories" />
-    <option name="LAST_COMMIT_MESSAGE" value="News VMC project&#10;TODO: add enum/table categories" />
+    <MESSAGE value="added find news by text&#10;todo: fix categories and edit news" />
+    <MESSAGE value="added filter and edit news functions" />
+    <option name="LAST_COMMIT_MESSAGE" value="added filter and edit news functions" />
   </component>
   <component name="editorHistoryManager">
     <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-context/5.1.0.RELEASE/spring-context-5.1.0.RELEASE.jar!/org/springframework/stereotype/Service.class">
@@ -887,10 +858,13 @@
     <entry file="file://$PROJECT_DIR$/src/main/resources/templates/main.mustache" />
     <entry file="das://eb2ac61d-5ae1-4d64-a218-1b65d1179364/database/postgres/schema/public/table/news" />
     <entry file="das://eb2ac61d-5ae1-4d64-a218-1b65d1179364/database/test-mvc/schema/public/table/news" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/gerkir/Application.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/gerkir/spring/Application.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
           <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -955,38 +929,10 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/gerkir/test.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/gerkir/entity/Categories.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/gerkir/spring/entity/Categories.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
           <caret line="4" column="7" selection-start-line="4" selection-start-column="4" selection-end-line="4" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/add.mustache">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="20" lean-forward="true" selection-start-line="8" selection-start-column="20" selection-end-line="8" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/gerkir/entity/News.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
-          <caret line="26" column="37" selection-start-line="26" selection-start-column="37" selection-end-line="26" selection-end-column="37" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#759#760#0" expanded="true" />
-            <element signature="e#792#793#0" expanded="true" />
-            <element signature="e#853#854#0" expanded="true" />
-            <element signature="e#897#898#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/news.mustache">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" selection-start-line="10" selection-end-line="10" />
         </state>
       </provider>
     </entry>
@@ -997,10 +943,24 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/gerkir/repos/NewsRepo.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/gerkir/spring/entity/News.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="14" column="36" selection-start-line="14" selection-start-column="36" selection-end-line="14" selection-end-column="36" />
+        <state relative-caret-position="306">
+          <caret line="18" column="39" lean-forward="true" selection-start-line="18" selection-start-column="39" selection-end-line="18" selection-end-column="39" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#759#760#0" expanded="true" />
+            <element signature="e#792#793#0" expanded="true" />
+            <element signature="e#853#854#0" expanded="true" />
+            <element signature="e#897#898#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/gerkir/spring/repos/NewsRepo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="16" column="75" selection-start-line="16" selection-start-column="19" selection-end-line="16" selection-end-column="99" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1009,15 +969,32 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/templates/edit.mustache">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="43" lean-forward="true" selection-start-line="9" selection-start-column="43" selection-end-line="9" selection-end-column="43" />
+        <state relative-caret-position="143">
+          <caret line="27" column="9" selection-start-line="27" selection-start-column="9" selection-end-line="27" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/news.mustache">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="22" column="14" selection-start-line="22" selection-start-column="14" selection-end-line="22" selection-end-column="14" />
+          <folding>
+            <marker date="1538488232219" expanded="true" signature="695:696" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/add.mustache">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" column="9" selection-start-line="14" selection-start-column="9" selection-end-line="14" selection-end-column="9" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/gerkir/spring/controller/NewsController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="506">
-          <caret line="69" column="42" selection-start-line="69" selection-start-column="42" selection-end-line="69" selection-end-column="42" />
+        <state relative-caret-position="204">
+          <caret line="18" column="57" lean-forward="true" selection-start-line="18" selection-start-column="57" selection-end-line="18" selection-end-column="57" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

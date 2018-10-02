@@ -1,7 +1,7 @@
-package com.gerkir.repos;
+package com.gerkir.spring.repos;
 
-import com.gerkir.entity.Categories;
-import com.gerkir.entity.News;
+import com.gerkir.spring.entity.Categories;
+import com.gerkir.spring.entity.News;
 import org.springframework.data.jpa.repository.JpaSpecificationExecutor;
 import org.springframework.data.repository.CrudRepository;
 import org.springframework.stereotype.Repository;

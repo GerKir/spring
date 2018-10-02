@@ -1,4 +1,4 @@
-package com.gerkir.entity;
+package com.gerkir.spring.entity;
 
 public enum Categories {
     SOCIAL,
