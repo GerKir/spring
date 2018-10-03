@@ -1,6 +1,7 @@
 package com.gerkir.spring.entity;
 
 import javax.persistence.*;
+import java.time.LocalDate;
 import java.util.Set;
 
 @Entity
@@ -12,6 +13,8 @@ public class News {
 
     private String title;
     private String text;
+
+    private LocalDate date;
 
     @ElementCollection(targetClass = Categories.class, fetch = FetchType.EAGER)
     @CollectionTable(name = "news_categories", joinColumns = @JoinColumn(name = "news_id"))
@@ -25,6 +28,7 @@ public class News {
         this.title = title;
         this.text = text;
         this.categories = categories;
+        this.date = LocalDate.now();
     }
 
     public Set<Categories> getCategories() {
@@ -57,5 +61,13 @@ public class News {
 
     public void setText(String text) {
         this.text = text;
+    }
+
+    public LocalDate getDate() {
+        return date;
+    }
+
+    public void setDate(LocalDate date) {
+        this.date = date;
     }
 }

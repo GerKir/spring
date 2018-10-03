@@ -46,6 +46,13 @@
     </tr>
     <tr>
         <td>
+            {{#date}}
+            {{date}}
+            {{/date}}
+        </td>
+    </tr>
+    <tr>
+        <td>
             <form name="edit" action="/news/edit" method="get">
                 <button type="submit" name="id" value={{id}}>Редактировать</button>
             </form>
